@@ -1,0 +1,100 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "CyphlensSSE",
+    "printedName": "CyphlensSSE",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "CyphlensSSE"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DemoSDK",
+        "printedName": "DemoSDK",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CyphlensSSE7DemoSDKC5startyyF",
+            "mangledName": "$s11CyphlensSSE7DemoSDKC5startyyF",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "ok",
+            "printedName": "ok()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11CyphlensSSE7DemoSDKC2okyyF",
+            "mangledName": "$s11CyphlensSSE7DemoSDKC2okyyF",
+            "moduleName": "CyphlensSSE",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:11CyphlensSSE7DemoSDKC",
+        "mangledName": "$s11CyphlensSSE7DemoSDKC",
+        "moduleName": "CyphlensSSE",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
