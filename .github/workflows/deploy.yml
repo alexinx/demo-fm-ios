@@ -86,6 +86,7 @@ jobs:
       - run: chmod +x build-universal-framework.sh && bash build-universal-framework.sh
 
       - run: |
+          cd lib
           TAG_VERSION="${{ steps.tag_version.outputs.version }}"
           sed -i '' "s/s\.version.*/s.version = '$TAG_VERSION'/" CyphlensSSE.podspec
 
