@@ -52,10 +52,10 @@ jobs:
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - run: |
-          PODSPEC_VERSION=$(grep -E "s\.version\s*=" CyphlensSSE.podspec | sed -E "s/.*['\"](.*)['\"].*/\1/")
+          PODSPEC_VERSION=$(grep -E "s\.version\s*=" DemoSDK.podspec | sed -E "s/.*['\"](.*)['\"].*/\1/")
           [ "$PODSPEC_VERSION" = "${{ steps.tag_version.outputs.version }}" ]
 
-      - run: pod lib lint CyphlensSSE.podspec --allow-warnings --verbose
+      - run: pod lib lint DemoSDK.podspec --allow-warnings --verbose
 
   deploy-cocoapods:
     name: Deploy to CocoaPods
@@ -88,9 +88,9 @@ jobs:
       - run: |
           cd lib
           TAG_VERSION="${{ steps.tag_version.outputs.version }}"
-          sed -i '' "s/s\.version.*/s.version = '$TAG_VERSION'/" CyphlensSSE.podspec
+          sed -i '' "s/s\.version.*/s.version = '$TAG_VERSION'/" DemoSDK.podspec
 
-      - run: cd lib && pod lib lint CyphlensSSE.podspec --allow-warnings --verbose
+      - run: cd lib && pod lib lint DemoSDK.podspec --allow-warnings --verbose
 
       # ✅ Push to PUBLIC repo FIRST
       - name: Push to public repo
@@ -101,11 +101,11 @@ jobs:
           git clone https://x-access-token:$GH_TOKEN@github.com/cyphlens/cyphlens-ios-sse-sdk.git /tmp/public
           cd /tmp/public
 
-          rm -rf Frameworks Package.swift CyphlensSSE.podspec LICENSE README.md
+          rm -rf Frameworks Package.swift DemoSDK.podspec LICENSE README.md
           mkdir Frameworks
           cp -R $GITHUB_WORKSPACE/lib/Frameworks/CyphlensSSE.xcframework Frameworks/
           cp $GITHUB_WORKSPACE/lib/Package.swift .
-          cp $GITHUB_WORKSPACE/lib/CyphlensSSE.podspec .
+          cp $GITHUB_WORKSPACE/lib/DemoSDK.podspec .
           cp $GITHUB_WORKSPACE/lib/LICENSE .
           cp $GITHUB_WORKSPACE/lib/README.md .
 
@@ -120,6 +120,6 @@ jobs:
       - name: Deploy to CocoaPods Trunk
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-        run: cd lib && pod trunk push CyphlensSSE.podspec --allow-warnings --verbose
+        run: cd lib && pod trunk push DemoSDK.podspec --allow-warnings --verbose
 
       - run: echo "✅ Release ${{ steps.tag_version.outputs.version }} published successfully"
