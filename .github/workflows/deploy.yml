@@ -87,7 +87,7 @@ jobs:
 
       - run: |
           TAG_VERSION="${{ steps.tag_version.outputs.version }}"
-          sed -i '' "s/s\.version.*/s.version = '$TAG_VERSION'/" lib/CyphlensSSE.podspec
+          sed -i '' "s/s\.version.*/s.version = '$TAG_VERSION'/" CyphlensSSE.podspec
 
       - run: cd lib && pod lib lint CyphlensSSE.podspec --allow-warnings --verbose
 
