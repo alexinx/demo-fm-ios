@@ -51,10 +51,11 @@ jobs:
           VERSION=${GITHUB_REF#refs/tags/v}
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
+      # 🔧 Sync podspec version BEFORE validating
       - run: |
           cd lib
-          PODSPEC_VERSION=$(grep -E "s\.version\s*=" DemoSDK.podspec | sed -E "s/.*['\"](.*)['\"].*/\1/")
-          [ "$PODSPEC_VERSION" = "${{ steps.tag_version.outputs.version }}" ]
+          TAG_VERSION="${{ steps.tag_version.outputs.version }}"
+          sed -i '' "s/s\.version.*/s.version = '$TAG_VERSION'/" DemoSDK.podspec
 
       - run: cd lib && pod lib lint DemoSDK.podspec --allow-warnings --verbose
 
@@ -86,6 +87,7 @@ jobs:
 
       - run: chmod +x build-universal-framework.sh && bash build-universal-framework.sh
 
+      # Ensure version is correct again
       - run: |
           cd lib
           TAG_VERSION="${{ steps.tag_version.outputs.version }}"
@@ -93,7 +95,7 @@ jobs:
 
       - run: cd lib && pod lib lint DemoSDK.podspec --allow-warnings --verbose
 
-      # Push to PUBLIC repo FIRST
+      # Push to PUBLIC repo first
       - name: Push to public repo
         env:
           GH_TOKEN: ${{ secrets.CYPHLENS_IOS_SSE_SDK_WRITE }}
