@@ -63,10 +63,19 @@ jobs:
           cp $GITHUB_WORKSPACE/lib/LICENSE .
           cp $GITHUB_WORKSPACE/lib/README.md .
 
+          BRANCH="release-$TAG"
+
           git config user.name "alex-bot"
           git config user.email "devops@alex.com"
+
+          # Create and switch to new branch
+          git checkout -b "$BRANCH"
+
           git add .
           git commit -m "Release $TAG" || echo "No changes"
+          # Push branch
+          git push origin "$BRANCH"
+
           git tag $TAG || echo "Tag exists"
           git push origin $TAG
 
