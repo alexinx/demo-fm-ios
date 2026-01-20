@@ -4,22 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "DemoSDK",
+    name: "DemoAlexSDK",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "DemoSDK",
-            targets: ["DemoSDK"]
+            name: "DemoAlexSDK",
+            targets: ["DemoAlexSDK"]
         ),
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "DemoSDK",
+            name: "DemoAlexSDK",
             dependencies: [],
-            path: "DemoSDK/Classes"
+            path: "DemoAlexSDK/Classes"
         ),
     ]
 )
