@@ -15,9 +15,10 @@ if [ ! -d "${WORKSPACE_PATH}" ]; then
 fi
 
 # build clean up
-rm -rf ./build
+# rm -rf ./build only for testing
+
 # cocoapod clean up - only clean frameworks, keep other files
-rm -rf lib/Frameworks/DemoAlexSDK.xcframework
+rm -rf lib/*
 
 echo $'\n\n ✅ clean build'
 
