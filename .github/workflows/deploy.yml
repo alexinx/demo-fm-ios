@@ -73,7 +73,7 @@ jobs:
 
           rm -rf Frameworks Package.swift DemoAlexSDK.podspec LICENSE README.md
           mkdir Frameworks
-          cp -R $GITHUB_WORKSPACE/lib/Frameworks/DemoSDK.xcframework Frameworks/
+          cp -R $GITHUB_WORKSPACE/lib/Frameworks/DemoAlexSDK.xcframework Frameworks/
           cp $GITHUB_WORKSPACE/lib/Package.swift .
           cp $GITHUB_WORKSPACE/lib/DemoAlexSDK.podspec .
           cp $GITHUB_WORKSPACE/lib/LICENSE .
