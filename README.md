@@ -1,6 +1,5 @@
 # DemoAlexSDK
 
-[![CI Status](https://img.shields.io/travis/24449613/DemoAlexSDK.svg?style=flat)](https://travis-ci.org/24449613/DemoAlexSDK)
 [![Version](https://img.shields.io/cocoapods/v/DemoAlexSDK.svg?style=flat)](https://cocoapods.org/pods/DemoAlexSDK)
 [![License](https://img.shields.io/cocoapods/l/DemoAlexSDK.svg?style=flat)](https://cocoapods.org/pods/DemoAlexSDK)
 [![Platform](https://img.shields.io/cocoapods/p/DemoAlexSDK.svg?style=flat)](https://cocoapods.org/pods/DemoAlexSDK)
