@@ -1,3 +1,0 @@
-# DEMO SDK tes
-
-``` sdk ```
