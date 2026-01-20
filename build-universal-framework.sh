@@ -121,13 +121,11 @@ if [ ! -f "${SCRIPT_DIR}/lib/DemoSDK.podspec" ]; then
 Pod::Spec.new do |s|
   s.name             = 'DemoSDK'
   s.version          = '1.0.1'
-  s.summary          = 'Demo SDK - iOS SDK for Server-Sent Events integration'
+  s.summary          = 'Demo SDK - iOS SDK'
 
   s.description      = <<-DESC
-A lightweight iOS SDK designed for demo purposes with Server-Sent Events (SSE) integration.
-The SDK establishes an SSE connection, listens for events from the backend, and notifies the host 
-application about the current status via callbacks.
-                       DESC
+Demo SDK for iOS for test
+DESC
 
   s.homepage         = 'https://github.com/alexinx/demo-fm-ios'
   s.license          = { :type => 'ISC', :file => 'LICENSE' }
