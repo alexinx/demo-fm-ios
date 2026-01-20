@@ -1,5 +1,5 @@
 import XCTest
-import DemoSDK
+import DemoAlexSDK
 
 class Tests: XCTestCase {
     

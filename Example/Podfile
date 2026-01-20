@@ -1,11 +1,11 @@
 use_frameworks!
 
-platform :ios, '13.0'
+platform :ios, '10.0'
 
-target 'DemoSDK_Example' do
-  pod 'DemoSDK', :path => '../'
+target 'DemoAlexSDK_Example' do
+  pod 'DemoAlexSDK', :path => '../'
 
-  target 'DemoSDK_Tests' do
+  target 'DemoAlexSDK_Tests' do
     inherit! :search_paths
 
     

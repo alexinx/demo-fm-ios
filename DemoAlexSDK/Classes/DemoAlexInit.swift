@@ -1,12 +1,12 @@
 
 
-
-public class DemoSDK{
+public class DemoAlexInit{
     
     public init(){
         
     }
+    
     public func start(){
-        print("start sdk")
+        print("Hello SDK World!")
     }
 }

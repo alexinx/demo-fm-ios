@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "DemoSDK_Example.app"
-               BlueprintName = "DemoSDK_Example"
-               ReferencedContainer = "container:DemoSDK.xcodeproj">
+               BuildableName = "DemoAlexSDK_Example.app"
+               BlueprintName = "DemoAlexSDK_Example"
+               ReferencedContainer = "container:DemoAlexSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "DemoSDK_Tests.xctest"
-               BlueprintName = "DemoSDK_Tests"
-               ReferencedContainer = "container:DemoSDK.xcodeproj">
+               BuildableName = "DemoAlexSDK_Tests.xctest"
+               BlueprintName = "DemoAlexSDK_Tests"
+               ReferencedContainer = "container:DemoAlexSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "DemoSDK_Tests.xctest"
-               BlueprintName = "DemoSDK_Tests"
-               ReferencedContainer = "container:DemoSDK.xcodeproj">
+               BuildableName = "DemoAlexSDK_Tests.xctest"
+               BlueprintName = "DemoAlexSDK_Tests"
+               ReferencedContainer = "container:DemoAlexSDK.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,9 +58,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DemoSDK_Example.app"
-            BlueprintName = "DemoSDK_Example"
-            ReferencedContainer = "container:DemoSDK.xcodeproj">
+            BuildableName = "DemoAlexSDK_Example.app"
+            BlueprintName = "DemoAlexSDK_Example"
+            ReferencedContainer = "container:DemoAlexSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DemoSDK_Example.app"
-            BlueprintName = "DemoSDK_Example"
-            ReferencedContainer = "container:DemoSDK.xcodeproj">
+            BuildableName = "DemoAlexSDK_Example.app"
+            BlueprintName = "DemoAlexSDK_Example"
+            ReferencedContainer = "container:DemoAlexSDK.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -101,9 +101,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "DemoSDK_Example.app"
-            BlueprintName = "DemoSDK_Example"
-            ReferencedContainer = "container:DemoSDK.xcodeproj">
+            BuildableName = "DemoAlexSDK_Example.app"
+            BlueprintName = "DemoAlexSDK_Example"
+            ReferencedContainer = "container:DemoAlexSDK.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

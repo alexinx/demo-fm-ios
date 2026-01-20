@@ -5,7 +5,7 @@ set -e
 BASE_PWD="$PWD"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 OUTPUT_DIR="${SCRIPT_DIR}/build/"
-WORKSPACE_PATH="${SCRIPT_DIR}/Example/DemoSDK.xcworkspace"
+WORKSPACE_PATH="${SCRIPT_DIR}/Example/DemoAlexSDK.xcworkspace"
 
 # Validate workspace exists
 if [ ! -d "${WORKSPACE_PATH}" ]; then
@@ -17,13 +17,13 @@ fi
 # build clean up
 rm -rf ./build
 # cocoapod clean up - only clean frameworks, keep other files
-rm -rf lib/Frameworks/DemoSDK.xcframework
+rm -rf lib/Frameworks/DemoAlexSDK.xcframework
 
 echo $'\n\n ✅ clean build'
 
 echo $'\n\n Build Started............'
 
-COMMON_SETUP="-workspace ${WORKSPACE_PATH} -scheme DemoSDK -configuration Release -quiet SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES"
+COMMON_SETUP="-workspace ${WORKSPACE_PATH} -scheme DemoAlexSDK -configuration Release -quiet SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES"
 
 # iOS
 
@@ -39,15 +39,15 @@ if ! xcrun xcodebuild build \
 fi
 
 mkdir -p "${OUTPUT_DIR}/iphoneos"
-FRAMEWORK_PATH="${DERIVED_DATA_PATH}/Build/Products/Release-iphoneos/DemoSDK/DemoSDK.framework"
+FRAMEWORK_PATH="${DERIVED_DATA_PATH}/Build/Products/Release-iphoneos/DemoAlexSDK/DemoAlexSDK.framework"
 if [ ! -d "${FRAMEWORK_PATH}" ]; then
 	echo "Error: Framework not found at ${FRAMEWORK_PATH}"
 	echo "Searching for framework in derived data..."
-	find "${DERIVED_DATA_PATH}" -name "DemoSDK.framework" -type d 2>/dev/null || true
+	find "${DERIVED_DATA_PATH}" -name "DemoAlexSDK.framework" -type d 2>/dev/null || true
 	rm -rf "${DERIVED_DATA_PATH}"
 	exit 1
 fi
-ditto "${FRAMEWORK_PATH}" "${OUTPUT_DIR}/iphoneos/DemoSDK.framework"
+ditto "${FRAMEWORK_PATH}" "${OUTPUT_DIR}/iphoneos/DemoAlexSDK.framework"
 rm -rf "${DERIVED_DATA_PATH}"
 echo "   ✅ iOS framework built successfully"
 
@@ -64,15 +64,15 @@ if ! xcrun xcodebuild build \
 fi
 
 mkdir -p "${OUTPUT_DIR}/iphonesimulator"
-FRAMEWORK_PATH="${DERIVED_DATA_PATH}/Build/Products/Release-iphonesimulator/DemoSDK/DemoSDK.framework"
+FRAMEWORK_PATH="${DERIVED_DATA_PATH}/Build/Products/Release-iphonesimulator/DemoAlexSDK/DemoAlexSDK.framework"
 if [ ! -d "${FRAMEWORK_PATH}" ]; then
 	echo "Error: Framework not found at ${FRAMEWORK_PATH}"
 	echo "Searching for framework in derived data..."
-	find "${DERIVED_DATA_PATH}" -name "DemoSDK.framework" -type d 2>/dev/null || true
+	find "${DERIVED_DATA_PATH}" -name "DemoAlexSDK.framework" -type d 2>/dev/null || true
 	rm -rf "${DERIVED_DATA_PATH}"
 	exit 1
 fi
-ditto "${FRAMEWORK_PATH}" "${OUTPUT_DIR}/iphonesimulator/DemoSDK.framework"
+ditto "${FRAMEWORK_PATH}" "${OUTPUT_DIR}/iphonesimulator/DemoAlexSDK.framework"
 rm -rf "${DERIVED_DATA_PATH}"
 echo "   ✅ iOS Simulator framework built successfully"
 
@@ -80,21 +80,21 @@ echo "   ✅ iOS Simulator framework built successfully"
 echo $'\n\n 📱 Building xcframework .........\n'
 mkdir -p "${SCRIPT_DIR}/lib/Frameworks"
 if ! xcrun xcodebuild -quiet -create-xcframework \
-	-framework "${OUTPUT_DIR}/iphoneos/DemoSDK.framework" \
-	-framework "${OUTPUT_DIR}/iphonesimulator/DemoSDK.framework" \
-	-output ${SCRIPT_DIR}/lib/Frameworks/DemoSDK.xcframework; then
+	-framework "${OUTPUT_DIR}/iphoneos/DemoAlexSDK.framework" \
+	-framework "${OUTPUT_DIR}/iphonesimulator/DemoAlexSDK.framework" \
+	-output ${SCRIPT_DIR}/lib/Frameworks/DemoAlexSDK.xcframework; then
 	echo "Error: Failed to create xcframework"
 	exit 1
 fi
 
 # Validate xcframework was created
-if [ ! -d "${SCRIPT_DIR}/lib/Frameworks/DemoSDK.xcframework" ]; then
+if [ ! -d "${SCRIPT_DIR}/lib/Frameworks/DemoAlexSDK.xcframework" ]; then
 	echo "Error: xcframework was not created at expected location"
 	exit 1
 fi
 
-echo $'\n\n ✅ DemoSDK.xcframework created successfully!'
-echo "   Location: ${SCRIPT_DIR}/lib/Frameworks/DemoSDK.xcframework"
+echo $'\n\n ✅ DemoAlexSDK.xcframework created successfully!'
+echo "   Location: ${SCRIPT_DIR}/lib/Frameworks/DemoAlexSDK.xcframework"
 
 # Copy additional files if needed
 if [ ! -f "${SCRIPT_DIR}/lib/README.md" ]; then
@@ -105,13 +105,13 @@ if [ ! -f "${SCRIPT_DIR}/lib/LICENSE" ]; then
 	cp -r LICENSE lib/LICENSE
 fi
 
-# Ensure lib/DemoSDK.podspec exists with vendored_frameworks configuration
+# Ensure lib/DemoAlexSDK.podspec exists with vendored_frameworks configuration
 # This podspec is for xcframework distribution via CocoaPods (different from root podspec)
-if [ ! -f "${SCRIPT_DIR}/lib/DemoSDK.podspec" ]; then
-	echo $'\n\n 📝 Creating lib/DemoSDK.podspec for xcframework distribution...'
-	cat > "${SCRIPT_DIR}/lib/DemoSDK.podspec" << 'EOF'
+if [ ! -f "${SCRIPT_DIR}/lib/DemoAlexSDK.podspec" ]; then
+	echo $'\n\n 📝 Creating lib/DemoAlexSDK.podspec for xcframework distribution...'
+	cat > "${SCRIPT_DIR}/lib/DemoAlexSDK.podspec" << 'EOF'
 #
-# Be sure to run `pod lib lint DemoSDK.podspec' to ensure this is a
+# Be sure to run `pod lib lint DemoAlexSDK.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -119,7 +119,7 @@ if [ ! -f "${SCRIPT_DIR}/lib/DemoSDK.podspec" ]; then
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'DemoSDK'
+  s.name             = 'DemoAlexSDK'
   s.version          = '1.0.1'
   s.summary          = 'Demo SDK - iOS SDK'
 
@@ -135,15 +135,15 @@ DESC
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
 
-  s.vendored_frameworks = 'Frameworks/DemoSDK.xcframework'
+  s.vendored_frameworks = 'Frameworks/DemoAlexSDK.xcframework'
   
   s.frameworks = 'Foundation', 'UIKit'
   s.requires_arc = true
 end
 EOF
-	echo $'   ✅ Created lib/DemoSDK.podspec'
+	echo $'   ✅ Created lib/DemoAlexSDK.podspec'
 else
-	echo $'\n\n ℹ️  lib/DemoSDK.podspec already exists (preserving xcframework configuration)'
+	echo $'\n\n ℹ️  lib/DemoAlexSDK.podspec already exists (preserving xcframework configuration)'
 fi
 
 # Ensure lib/Package.swift exists for Swift Package Manager distribution
@@ -157,21 +157,21 @@ if [ ! -f "${SCRIPT_DIR}/lib/Package.swift" ]; then
 import PackageDescription
 
 let package = Package(
-    name: "DemoSDK",
+    name: "DemoAlexSDK",
     platforms: [
         .iOS(.v13)
     ],
     products: [
         .library(
-            name: "DemoSDK",
-            targets: ["DemoSDK"]
+            name: "DemoAlexSDK",
+            targets: ["DemoAlexSDK"]
         ),
     ],
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "DemoSDK",
-            path: "Frameworks/DemoSDK.xcframework"
+            name: "DemoAlexSDK",
+            path: "Frameworks/DemoAlexSDK.xcframework"
         ),
     ]
 )
@@ -188,7 +188,7 @@ cp -r README.md lib/README.md
 cp -r LICENSE lib/LICENSE
 
 echo $'\n\n ✅ Build complete! Framework is ready for CocoaPods submission.'
-echo $'   Framework location: lib/Frameworks/DemoSDK.xcframework'
+echo $'   Framework location: lib/Frameworks/DemoAlexSDK.xcframework'
 
 #open reveal folder
 # open "${SCRIPT_DIR}/lib/"

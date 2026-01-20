@@ -1,6 +1,0 @@
-framework module DemoSDK {
-  umbrella header "DemoSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

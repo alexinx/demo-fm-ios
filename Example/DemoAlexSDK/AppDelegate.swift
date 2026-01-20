@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  DemoSDK
+//  DemoAlexSDK
 //
 //  Created by 24449613 on 01/20/2026.
 //  Copyright (c) 2026 24449613. All rights reserved.

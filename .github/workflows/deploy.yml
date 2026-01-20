@@ -57,12 +57,13 @@ jobs:
       - run: |
           cd lib
           TAG_VERSION="${{ steps.tag_version.outputs.version }}"
-          sed -i '' "s/\(s\.version[[:space:]]*=[[:space:]]*\)'.*'/\1'$TAG_VERSION'/" DemoSDK.podspec
+          sed -i '' "s/\(s\.version[[:space:]]*=[[:space:]]*\)'.*'/\1'$TAG_VERSION'/" DemoAlexSDK.podspec
 
-      - run: cd lib && pod lib lint DemoSDK.podspec --allow-warnings --verbose
+      - run: cd lib && pod lib lint DemoAlexSDK.podspec --allow-warnings --verbose
 
       # Push to public repo
       - name: Push to public repo
+        if: false
         env:
           GH_TOKEN: ${{ secrets.CYPHLENS_IOS_SSE_SDK_WRITE }}
         run: |
@@ -70,11 +71,11 @@ jobs:
           git clone https://x-access-token:$GH_TOKEN@github.com/cyphlens/cyphlens-ios-sse-sdk.git /tmp/public
           cd /tmp/public
 
-          rm -rf Frameworks Package.swift DemoSDK.podspec LICENSE README.md
+          rm -rf Frameworks Package.swift DemoAlexSDK.podspec LICENSE README.md
           mkdir Frameworks
           cp -R $GITHUB_WORKSPACE/lib/Frameworks/DemoSDK.xcframework Frameworks/
           cp $GITHUB_WORKSPACE/lib/Package.swift .
-          cp $GITHUB_WORKSPACE/lib/DemoSDK.podspec .
+          cp $GITHUB_WORKSPACE/lib/DemoAlexSDK.podspec .
           cp $GITHUB_WORKSPACE/lib/LICENSE .
           cp $GITHUB_WORKSPACE/lib/README.md .
 
@@ -89,6 +90,6 @@ jobs:
       - name: Deploy to CocoaPods Trunk
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
-        run: cd lib && pod trunk push DemoSDK.podspec --allow-warnings --verbose
+        run: cd lib && pod trunk push DemoAlexSDK.podspec --allow-warnings --verbose
 
       - run: echo "✅ Release ${{ steps.tag_version.outputs.version }} published successfully"

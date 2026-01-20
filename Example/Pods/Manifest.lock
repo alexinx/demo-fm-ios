@@ -1,16 +1,16 @@
 PODS:
-  - DemoSDK (0.1.0)
+  - DemoAlexSDK (0.1.0)
 
 DEPENDENCIES:
-  - DemoSDK (from `../`)
+  - DemoAlexSDK (from `../`)
 
 EXTERNAL SOURCES:
-  DemoSDK:
+  DemoAlexSDK:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DemoSDK: c3e4391246d30c98a1c569b1b903177cf8d124ff
+  DemoAlexSDK: f30a1aba02e03c7abbba9b09d77c9ffc289e1e99
 
-PODFILE CHECKSUM: 53117073a62eb4b6d166e807c75d483de8e45dcb
+PODFILE CHECKSUM: 11200b11ec17ca4a40f7498c58ba5b4e2e85f080
 
 COCOAPODS: 1.16.2

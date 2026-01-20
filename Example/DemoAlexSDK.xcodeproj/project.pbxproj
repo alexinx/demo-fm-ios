@@ -13,8 +13,8 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		A7F61DFF3737806C0C353C92 /* Pods_DemoSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6538FF0BFC7D268052F04D5B /* Pods_DemoSDK_Tests.framework */; };
-		BC08412E08F557C7972C7C6E /* Pods_DemoSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24DA225C7B0D1CDB99E96A41 /* Pods_DemoSDK_Example.framework */; };
+		BE59A5B9274F7B801E94D492 /* Pods_DemoAlexSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D07895516ADE6C39BCC9AFC /* Pods_DemoAlexSDK_Tests.framework */; };
+		C3C2E90BB4FB45125495A77F /* Pods_DemoAlexSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49F9FF547EA4AD6FCCF38878 /* Pods_DemoAlexSDK_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,30 +23,30 @@
 			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
-			remoteInfo = DemoSDK;
+			remoteInfo = DemoAlexSDK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16C9E4F566DC789A64A8BB5B /* Pods-DemoSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DemoSDK_Tests/Pods-DemoSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		19829259D1F3E01C08F87614 /* Pods-DemoSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-DemoSDK_Example/Pods-DemoSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		24DA225C7B0D1CDB99E96A41 /* Pods_DemoSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3F8B548CD4EF6EFB161F56EC /* DemoSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DemoSDK.podspec; path = ../DemoSDK.podspec; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* DemoSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B36FC4AEE41491F81A3438 /* Pods-DemoAlexSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAlexSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-DemoAlexSDK_Example/Pods-DemoAlexSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0F6659E30679A825D00AF0E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1AC47026718C75ED5653E8C8 /* DemoAlexSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = DemoAlexSDK.podspec; path = ../DemoAlexSDK.podspec; sourceTree = "<group>"; };
+		1F0FDC542251531195EE7809 /* Pods-DemoAlexSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAlexSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-DemoAlexSDK_Tests/Pods-DemoAlexSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		49F9FF547EA4AD6FCCF38878 /* Pods_DemoAlexSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoAlexSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D1D3A98FF6093FD6BF39361 /* Pods-DemoAlexSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAlexSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-DemoAlexSDK_Example/Pods-DemoAlexSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* DemoAlexSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoAlexSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACE51AFB9204008FA782 /* DemoSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACE51AFB9204008FA782 /* DemoAlexSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAlexSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6538FF0BFC7D268052F04D5B /* Pods_DemoSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1B64331958EE419ACFD63C5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		CB94257FD7486246CD67A37F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DD1DD408E6D3B9F712E2EAF3 /* Pods-DemoSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-DemoSDK_Example/Pods-DemoSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E27E6BC9293336D803FD72BD /* Pods-DemoSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-DemoSDK_Tests/Pods-DemoSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8D07895516ADE6C39BCC9AFC /* Pods_DemoAlexSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoAlexSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC96928B7544A13A84D58D2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D8424C38695EAD9262920C42 /* Pods-DemoAlexSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoAlexSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DemoAlexSDK_Tests/Pods-DemoAlexSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC08412E08F557C7972C7C6E /* Pods_DemoSDK_Example.framework in Frameworks */,
+				C3C2E90BB4FB45125495A77F /* Pods_DemoAlexSDK_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,46 +62,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7F61DFF3737806C0C353C92 /* Pods_DemoSDK_Tests.framework in Frameworks */,
+				BE59A5B9274F7B801E94D492 /* Pods_DemoAlexSDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		496D66EEF93FA7694C1E808A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				19829259D1F3E01C08F87614 /* Pods-DemoSDK_Example.debug.xcconfig */,
-				DD1DD408E6D3B9F712E2EAF3 /* Pods-DemoSDK_Example.release.xcconfig */,
-				16C9E4F566DC789A64A8BB5B /* Pods-DemoSDK_Tests.debug.xcconfig */,
-				E27E6BC9293336D803FD72BD /* Pods-DemoSDK_Tests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for DemoSDK */,
+				607FACD21AFB9204008FA782 /* Example for DemoAlexSDK */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				496D66EEF93FA7694C1E808A /* Pods */,
-				8EFDC5AC0769CEEFB1FAE6E7 /* Frameworks */,
+				AAF4B8DF330C4DC821C88444 /* Pods */,
+				9D417648583CDAF86B96E5A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* DemoSDK_Example.app */,
-				607FACE51AFB9204008FA782 /* DemoSDK_Tests.xctest */,
+				607FACD01AFB9204008FA782 /* DemoAlexSDK_Example.app */,
+				607FACE51AFB9204008FA782 /* DemoAlexSDK_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for DemoSDK */ = {
+		607FACD21AFB9204008FA782 /* Example for DemoAlexSDK */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -111,8 +100,8 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for DemoSDK";
-			path = DemoSDK;
+			name = "Example for DemoAlexSDK";
+			path = DemoAlexSDK;
 			sourceTree = "<group>";
 		};
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
@@ -143,49 +132,61 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				3F8B548CD4EF6EFB161F56EC /* DemoSDK.podspec */,
-				CB94257FD7486246CD67A37F /* README.md */,
-				C1B64331958EE419ACFD63C5 /* LICENSE */,
+				1AC47026718C75ED5653E8C8 /* DemoAlexSDK.podspec */,
+				CFC96928B7544A13A84D58D2 /* README.md */,
+				0F6659E30679A825D00AF0E8 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		8EFDC5AC0769CEEFB1FAE6E7 /* Frameworks */ = {
+		9D417648583CDAF86B96E5A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				24DA225C7B0D1CDB99E96A41 /* Pods_DemoSDK_Example.framework */,
-				6538FF0BFC7D268052F04D5B /* Pods_DemoSDK_Tests.framework */,
+				49F9FF547EA4AD6FCCF38878 /* Pods_DemoAlexSDK_Example.framework */,
+				8D07895516ADE6C39BCC9AFC /* Pods_DemoAlexSDK_Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAF4B8DF330C4DC821C88444 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09B36FC4AEE41491F81A3438 /* Pods-DemoAlexSDK_Example.debug.xcconfig */,
+				4D1D3A98FF6093FD6BF39361 /* Pods-DemoAlexSDK_Example.release.xcconfig */,
+				D8424C38695EAD9262920C42 /* Pods-DemoAlexSDK_Tests.debug.xcconfig */,
+				1F0FDC542251531195EE7809 /* Pods-DemoAlexSDK_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* DemoSDK_Example */ = {
+		607FACCF1AFB9204008FA782 /* DemoAlexSDK_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DemoSDK_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DemoAlexSDK_Example" */;
 			buildPhases = (
-				34F35F432D774C72CE8DA54F /* [CP] Check Pods Manifest.lock */,
+				BD45F13A802916291BC6DE3C /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0260A9F8121D831FDAA44682 /* [CP] Embed Pods Frameworks */,
+				0DB9F12FD9FE13DA082C0446 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = DemoSDK_Example;
-			productName = DemoSDK;
-			productReference = 607FACD01AFB9204008FA782 /* DemoSDK_Example.app */;
+			name = DemoAlexSDK_Example;
+			productName = DemoAlexSDK;
+			productReference = 607FACD01AFB9204008FA782 /* DemoAlexSDK_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		607FACE41AFB9204008FA782 /* DemoSDK_Tests */ = {
+		607FACE41AFB9204008FA782 /* DemoAlexSDK_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DemoSDK_Tests" */;
+			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DemoAlexSDK_Tests" */;
 			buildPhases = (
-				4329D4434E66225BA21AD10B /* [CP] Check Pods Manifest.lock */,
+				55F4AEB3DC8F789C6A92ADC2 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -195,9 +196,9 @@
 			dependencies = (
 				607FACE71AFB9204008FA782 /* PBXTargetDependency */,
 			);
-			name = DemoSDK_Tests;
+			name = DemoAlexSDK_Tests;
 			productName = Tests;
-			productReference = 607FACE51AFB9204008FA782 /* DemoSDK_Tests.xctest */;
+			productReference = 607FACE51AFB9204008FA782 /* DemoAlexSDK_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -221,12 +222,11 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DemoSDK" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DemoAlexSDK" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -235,8 +235,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* DemoSDK_Example */,
-				607FACE41AFB9204008FA782 /* DemoSDK_Tests */,
+				607FACCF1AFB9204008FA782 /* DemoAlexSDK_Example */,
+				607FACE41AFB9204008FA782 /* DemoAlexSDK_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,25 +262,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0260A9F8121D831FDAA44682 /* [CP] Embed Pods Frameworks */ = {
+		0DB9F12FD9FE13DA082C0446 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DemoSDK_Example/Pods-DemoSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DemoSDK/DemoSDK.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-DemoAlexSDK_Example/Pods-DemoAlexSDK_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DemoAlexSDK/DemoAlexSDK.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DemoSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DemoAlexSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoSDK_Example/Pods-DemoSDK_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DemoAlexSDK_Example/Pods-DemoAlexSDK_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		34F35F432D774C72CE8DA54F /* [CP] Check Pods Manifest.lock */ = {
+		55F4AEB3DC8F789C6A92ADC2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,14 +295,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DemoSDK_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DemoAlexSDK_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4329D4434E66225BA21AD10B /* [CP] Check Pods Manifest.lock */ = {
+		BD45F13A802916291BC6DE3C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,7 +317,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-DemoSDK_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-DemoAlexSDK_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,7 +349,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* DemoSDK_Example */;
+			target = 607FACCF1AFB9204008FA782 /* DemoAlexSDK_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -475,11 +475,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19829259D1F3E01C08F87614 /* Pods-DemoSDK_Example.debug.xcconfig */;
+			baseConfigurationReference = 09B36FC4AEE41491F81A3438 /* Pods-DemoAlexSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = DemoSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_FILE = DemoAlexSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -491,11 +490,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD1DD408E6D3B9F712E2EAF3 /* Pods-DemoSDK_Example.release.xcconfig */;
+			baseConfigurationReference = 4D1D3A98FF6093FD6BF39361 /* Pods-DemoAlexSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = DemoSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_FILE = DemoAlexSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,7 +505,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16C9E4F566DC789A64A8BB5B /* Pods-DemoSDK_Tests.debug.xcconfig */;
+			baseConfigurationReference = D8424C38695EAD9262920C42 /* Pods-DemoAlexSDK_Tests.debug.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -518,39 +516,37 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoSDK_Example.app/DemoSDK_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoAlexSDK_Example.app/DemoAlexSDK_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E27E6BC9293336D803FD72BD /* Pods-DemoSDK_Tests.release.xcconfig */;
+			baseConfigurationReference = 1F0FDC542251531195EE7809 /* Pods-DemoAlexSDK_Tests.release.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoSDK_Example.app/DemoSDK_Example";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DemoAlexSDK_Example.app/DemoAlexSDK_Example";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DemoSDK" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "DemoAlexSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -559,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DemoSDK_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DemoAlexSDK_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -568,7 +564,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DemoSDK_Tests" */ = {
+		607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "DemoAlexSDK_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
