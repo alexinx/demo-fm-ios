@@ -3,7 +3,7 @@ name: Deploy to CocoaPods
 on:
   push:
     tags:
-      - "v[0-9]+.[0-9]+.[0-9]+"
+      - "v[0-9]+.[0-9]+.[0-9]+" # Matches v1.0.1, v1.0.0, v10.20.30, etc.
 
 jobs:
   validate-package:
@@ -51,13 +51,11 @@ jobs:
           VERSION=${GITHUB_REF#refs/tags/v}
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
-      # 🔧 Sync podspec version BEFORE validating
       - run: |
-          cd lib
-          TAG_VERSION="${{ steps.tag_version.outputs.version }}"
-          sed -i '' "s/s\.version.*/s.version = '$TAG_VERSION'/" DemoSDK.podspec
+          PODSPEC_VERSION=$(grep -E "s\.version\s*=" DemoSDK.podspec | sed -E "s/.*['\"](.*)['\"].*/\1/")
+          [ "$PODSPEC_VERSION" = "${{ steps.tag_version.outputs.version }}" ]
 
-      - run: cd lib && pod lib lint DemoSDK.podspec --allow-warnings --verbose
+      - run: pod lib lint DemoSDK.podspec --allow-warnings --verbose
 
   deploy-cocoapods:
     name: Deploy to CocoaPods
@@ -87,15 +85,13 @@ jobs:
 
       - run: chmod +x build-universal-framework.sh && bash build-universal-framework.sh
 
-      # Ensure version is correct again
       - run: |
-          cd lib
           TAG_VERSION="${{ steps.tag_version.outputs.version }}"
-          sed -i '' "s/s\.version.*/s.version = '$TAG_VERSION'/" DemoSDK.podspec
+          sed -i '' "s/s\.version.*/s.version = '$TAG_VERSION'/" lib/DemoSDK.podspec
 
       - run: cd lib && pod lib lint DemoSDK.podspec --allow-warnings --verbose
 
-      # Push to PUBLIC repo first
+      # ✅ Push to PUBLIC repo FIRST
       - name: Push to public repo
         env:
           GH_TOKEN: ${{ secrets.CYPHLENS_IOS_SSE_SDK_WRITE }}
@@ -106,7 +102,7 @@ jobs:
 
           rm -rf Frameworks Package.swift DemoSDK.podspec LICENSE README.md
           mkdir Frameworks
-          cp -R $GITHUB_WORKSPACE/lib/Frameworks/CyphlensSSE.xcframework Frameworks/
+          cp -R $GITHUB_WORKSPACE/lib/Frameworks/DemoSDK.xcframework Frameworks/
           cp $GITHUB_WORKSPACE/lib/Package.swift .
           cp $GITHUB_WORKSPACE/lib/DemoSDK.podspec .
           cp $GITHUB_WORKSPACE/lib/LICENSE .
@@ -119,7 +115,7 @@ jobs:
           git tag $TAG || echo "Tag exists"
           git push origin $TAG
 
-      # Then push to CocoaPods
+      # ✅ THEN push to CocoaPods
       - name: Deploy to CocoaPods Trunk
         env:
           COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
