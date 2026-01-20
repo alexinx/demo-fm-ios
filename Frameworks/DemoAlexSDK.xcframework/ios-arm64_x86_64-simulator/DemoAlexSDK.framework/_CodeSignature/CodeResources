@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/DemoAlexSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Dd5Iz16cJoQyCK45QRlwfKebLa4=
+		WTgHSck8oQHl7eYi9NvJAMo4SHQ=
 		</data>
 		<key>Modules/DemoAlexSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/DemoAlexSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4t/4k3sdX1Hc7l9gd1h1BxDS70A=
+		7ONDTN3ht/8MsvSw9LMBaiEzT6I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -163,11 +163,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dd5Iz16cJoQyCK45QRlwfKebLa4=
+			WTgHSck8oQHl7eYi9NvJAMo4SHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			1mPj5mUztle0QEO4omyYUdqWy9bSDu/1APazVQa0Gy4=
+			1KJ4ldXCeLnwGsAiwoJWCUP2FVo5lVbMmV3FayNC98w=
 			</data>
 		</dict>
 		<key>Modules/DemoAlexSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -218,11 +218,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4t/4k3sdX1Hc7l9gd1h1BxDS70A=
+			7ONDTN3ht/8MsvSw9LMBaiEzT6I=
 			</data>
 			<key>hash2</key>
 			<data>
-			f77s0VLTtOcK65ZUXn3dpctNBviKxsHlgkUHipspYIk=
+			py+VTbbKaYrm2yYwrVFRUlE+bZBhcmV3snbAbRfqQCA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
