@@ -22,18 +22,29 @@ jobs:
       - uses: ruby/setup-ruby@v1
         with: { ruby-version: "3.1" }
 
-      - run: gem install cocoapods
+      - name: Install CocoaPods
+        run: gem install cocoapods
 
-      - id: tag_version
+      - name: Get Tag Version
+        id: tag_version
         run: |
           VERSION=${GITHUB_REF#refs/tags/v}
           echo "version=$VERSION" >> $GITHUB_OUTPUT
 
-      - run: cd Example && pod install --repo-update
+      - name: Install CocoaPods Dependencies
+        run: |
+          cd Example
+          pod install --repo-update
+          echo "✓ CocoaPods dependencies installed"
 
-      - run: chmod +x build-universal-framework.sh && bash build-universal-framework.sh
+      - name: Build Universal Framework
+        run: |
+          chmod +x build-universal-framework.sh
+          bash build-universal-framework.sh
+          echo "✓ Universal framework built"
 
-      - run: |
+      - name: Resolve Swift Package Dependencies
+        run: |
           cd lib
           swift package resolve
           echo "✓ Swift build passed"
@@ -44,7 +55,11 @@ jobs:
           TAG_VERSION="${{ steps.tag_version.outputs.version }}"
           sed -i '' "s/\(s\.version[[:space:]]*=[[:space:]]*\)'.*'/\1'$TAG_VERSION'/" DemoAlexSDK.podspec
 
-      - run: cd lib && pod lib lint DemoAlexSDK.podspec --allow-warnings --verbose
+      - name: Lint Podspec
+        run: |
+          cd lib
+          pod lib lint DemoAlexSDK.podspec --allow-warnings --verbose
+          echo "✓ Podspec lint passed"
 
       # ✅ Push to PUBLIC repo first before pushing to CocoaPods
       - name: Push to public repo
