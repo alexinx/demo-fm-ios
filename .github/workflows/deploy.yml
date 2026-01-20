@@ -50,7 +50,8 @@ jobs:
           echo "✓ Swift build passed"
 
       # Safe version update from tag version to podspec
-      - run: |
+      - name: Podspec safe version update from tag
+        run: |
           cd lib
           TAG_VERSION="${{ steps.tag_version.outputs.version }}"
           sed -i '' "s/\(s\.version[[:space:]]*=[[:space:]]*\)'.*'/\1'$TAG_VERSION'/" DemoAlexSDK.podspec
