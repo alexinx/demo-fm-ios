@@ -1,0 +1,82 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DemoSDK",
+    "printedName": "DemoSDK",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "DemoSDK",
+        "printedName": "DemoSDK",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DemoSDK",
+                "printedName": "DemoSDK.DemoSDK",
+                "usr": "s:7DemoSDKAAC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:7DemoSDKAACABycfc",
+            "mangledName": "$s7DemoSDKAACABycfc",
+            "moduleName": "DemoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:7DemoSDKAAC5startyyF",
+            "mangledName": "$s7DemoSDKAAC5startyyF",
+            "moduleName": "DemoSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:7DemoSDKAAC",
+        "mangledName": "$s7DemoSDKAAC",
+        "moduleName": "DemoSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
