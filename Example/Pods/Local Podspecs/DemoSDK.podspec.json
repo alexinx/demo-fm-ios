@@ -1,0 +1,22 @@
+{
+  "name": "DemoSDK",
+  "version": "0.1.0",
+  "summary": "A short description of DemoSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/24449613/DemoSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "24449613": "alexappadurai.swamydhas@ionixxtech.com"
+  },
+  "source": {
+    "git": "https://github.com/24449613/DemoSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DemoSDK/Classes/**/*"
+}
