@@ -16,9 +16,11 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(
+        .target(
             name: "DemoSDK",
-            path: "Frameworks/DemoSDK.xcframework"
+            dependencies: [],
+            path: "DemoSDK/Classes"
         ),
     ]
 )
+
