@@ -35,7 +35,7 @@ jobs:
 
       - run: |
           cd lib
-          swift build
+          swift package resolve
           echo "✓ Swift build passed"
 
       # Safe version update from tag version to podspec

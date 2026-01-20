@@ -128,10 +128,10 @@ Pod::Spec.new do |s|
 Demo SDK for iOS for test
 DESC
 
-  s.homepage         = 'https://github.com/alexinx/demo-fm-ios'
+  s.homepage         = 'https://github.com/alexinx/demo-fm-ios-doc'
   s.license          = { :type => 'ISC', :file => 'LICENSE' }
   s.author           = { 'Demo' => 'demo@example.com' }
-  s.source           = { :git => 'https://github.com/alexinx/demo-fm-ios.git', :tag => "v#{s.version}"}
+  s.source           = { :git => 'https://github.com/alexinx/demo-fm-ios-doc.git', :tag => "v#{s.version}"}
 
   s.ios.deployment_target = '13.0'
   s.swift_version = '5.0'
