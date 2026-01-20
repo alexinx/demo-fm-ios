@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DemoAlexSDK'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of DemoAlexSDK.'
+  s.version          = '1.0.3'
+  s.summary          = 'Demo SDK - iOS SDK'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
