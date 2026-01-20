@@ -121,7 +121,7 @@ if [ ! -f "${SCRIPT_DIR}/lib/DemoAlexSDK.podspec" ]; then
 
 Pod::Spec.new do |s|
   s.name             = 'DemoAlexSDK'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Demo SDK - iOS SDK'
 
   s.description      = <<-DESC
